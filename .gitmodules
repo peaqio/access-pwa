@@ -1,0 +1,3 @@
+[submodule "access-pwa-styleguide"]
+	path = access-pwa-styleguide
+	url = https://github.com/peaqio/access-pwa-styleguide.git

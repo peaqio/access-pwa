@@ -1,0 +1,112 @@
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://EditorConfig.org
+; This style is a MUST for all Advanced Blockchain AG projects
+; Copyright (c) 2021, Peaq Technology GmbH
+
+root = true
+
+###########################################################
+; common
+###########################################################
+
+[*]
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.conf]
+indent_style = tab
+
+###########################################################
+; C++, C, C#
+###########################################################
+
+[{*.cpp,*.c,*.hpp,*.h,*.cs}]
+indent_style = space
+indent_size = 4
+
+###########################################################
+; JS, TypeScript, Vue
+###########################################################
+
+[*.{js,ts,vue}]
+indent_style = space
+indent_size = 2
+
+[package.json]
+indent_style = space
+indent_size = 2
+
+###########################################################
+; Go
+###########################################################
+
+[{go.mod,go.sum,*.go}]
+indent_style = tab
+
+###########################################################
+; Rust
+###########################################################
+
+[*.rs]
+indent_style = space
+indent_size = 4
+
+###########################################################
+; Python
+###########################################################
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+###########################################################
+; Jenkins
+###########################################################
+
+[Jenkinsfile]
+indent_style = space
+indent_size = 2
+
+###########################################################
+; Protobuf
+###########################################################
+
+[*.proto]
+indent_style = space
+indent_size = 2
+
+###########################################################
+; make
+###########################################################
+
+[{Makefile,makefile}]
+indent_style = tab
+
+###########################################################
+; Docker
+###########################################################
+
+[Dockerfile]
+indent_style = space
+indent_size = 2
+
+###########################################################
+; markdown
+###########################################################
+
+[*.md]
+trim_trailing_whitespace = false
+
+###########################################################
+; Nim
+###########################################################
+
+[{*.nim, .nimble}]
+indent_style = space
+indent_size = 2

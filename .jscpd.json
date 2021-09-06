@@ -1,0 +1,13 @@
+{
+  "threshold": 1,
+  "reporters": ["html", "console"],
+  "ignore": ["**/__snapshots__/**", "**/.next/**"],
+  "absolute": true,
+  "gitignore": true,
+  "min-tokens": 50,
+  "min-lines": 5,
+  "max-lines": 10000,
+  "max-size": "1mb",
+  "mode": "strict",
+  "blame": true
+}

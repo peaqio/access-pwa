@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-sonarts",
+    "tslint-config-prettier",
+    "tslint-react-hooks"
+  ],
+  "rules": {
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape",
+      "jsx-double",
+      "avoid-template"
+    ],
+    "ordered-imports": false,
+    "eofline": false,
+    "object-literal-sort-keys": false,
+    "align": false,
+    "interface-name": false,
+    "no-shadowed-variable": false,
+    "array-type": false,
+    "no-unused-variable": [true, { "ignore-pattern": "^React" }],
+    "member-access": false,
+    "max-union-size": [true, 4],
+    "no-angle-bracket-type-assertion": false,
+    "no-nested-template-literals": false,
+    "jsx-no-lambda": false,
+    "import-blacklist": [true, "@material-ui/core"],
+    "no-default-export": true
+  },
+  "linterOptions": {
+    "exclude": ["**/.next/**/*", "**/node_modules/**/*", "**/out/**/*"]
+  },
+  "autoFixOnSave": true
+}

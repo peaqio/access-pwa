@@ -1,0 +1,258 @@
+# Specifies intentionally untracked file system entries to ignore.
+#
+# Notes:
+# 1. Do not commit .gitignore files in sub directories of the repository,
+# as they would have to be explicitly excluded when generating the installer,
+# building the project and in other situations.
+# 2. Use the full path to a dir when you want to exclude a directory
+# and everything it contains. Start with repo-root, which is "/",
+# and do NOT use a "/" at the end, as this would fail if that dir is a symlink.
+# good example:
+# /signing/node
+# bad examples:
+# signing/node
+# /signing/node/
+#
+# For more details about how this file works, see:
+# http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+
+############################
+# OS or Editor folders
+############################
+
+.cache
+.project
+.settings
+.tmproj
+*.sublime-project
+*.sublime-workspace
+.idea
+.vs
+.vscode/
+*.iml
+*.swp
+nbproject
+
+## OS X
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+._*
+.Trashes
+
+## Linux
+
+*~
+
+## Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+## Visual Studio files
+
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+############################
+# Misc always-ignore extensions
+############################
+
+*.o
+*.so
+*.a
+*.seed
+*.diff
+*.err
+*.gch
+*.dir
+*.class
+*.com
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.swn
+*.swm
+*.vi
+*.obj
+*.dll
+*.exe
+*.lo
+*.la
+*.zip
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.out
+*.pid
+*#
+public/uploads/*
+!public/uploads/.gitkeep
+
+
+############################
+# Databases
+############################
+
+*.sql
+*.sqlite
+*.sqlite3
+
+############################
+# Node.js
+############################
+
+lib-cov
+lcov.info
+pids
+logs
+results
+node_modules
+.node_history
+
+############################
+# Rust
+############################
+
+## cargo
+
+target
+rls
+Cargo.lock
+
+############################
+# Next
+############################
+
+.next
+_next
+
+############################
+# Go
+############################
+
+## Dependency directories
+
+vendor/
+
+############################
+# Folders to ignore
+############################
+
+/build
+/Debug
+/Release
+.tmp
+_tmp
+/mingwlibs
+/mingwlibs64
+src/out
+report
+*/bin
+
+############################
+# Cmake related file
+############################
+
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+
+############################
+# Tests binrary files here
+############################
+
+testApp
+
+############################
+# Tests coverage files
+############################
+
+coverage
+*.test
+
+############################
+# ctags
+############################
+
+tags
+
+############################
+# Static analyzers
+############################
+
+*.error
+.gdf*
+
+############################
+# Logs
+############################
+
+*.log
+
+############################
+#Terraform
+############################
+
+## Local .terraform directories
+
+**/.terraform/*
+
+## .tfstate files
+
+*.tfstate
+*.tfstate.*
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+## Ignore CLI configuration file
+
+.terraformrc
+terraform.rc
+
+############################
+# Strapi
+############################
+
+exports
+.cache
+build
